@@ -1,0 +1,67 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .flexbox {
+    width: 415px;
+    height: 415px;
+    border-radius: 28px;
+    background: $DarkBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+
+    span {
+      @include center;
+      background: hsl(212, 11%, 24%);
+      width: 47px;
+      height: 47px;
+      border-radius: 50%;
+    }
+    h1 {
+      font-size: 1.65rem;
+    }
+    p {
+      margin-right: 10px;
+      color: $LightGrey;
+      line-height: 25px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      button {
+        background: hsl(212, 11%, 24%);
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        border: none;
+        color: $LightGrey;
+        font-size: 0.9rem;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+          color: $White;
+          background: $Orange;
+          border: 1px solid $VeryDarkBlue;
+        }
+      }
+    }
+    #submit {
+      background: $Orange;
+      width: 340px;
+      height: 44px;
+      border-radius: 20px;
+      border: 1.5px solid $VeryDarkBlue;
+      text-transform: uppercase;
+      color: $White;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+  }
+}
