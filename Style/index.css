@@ -95,10 +95,11 @@ main .submitcard .flexbox ul li:hover {
   background: hsl(25deg, 97%, 53%);
   border: 1px solid hsl(216deg, 12%, 8%);
 }
-main .submitcard .flexbox ul li .btn-clicked {
+main .submitcard .flexbox ul .btnclicked {
   background: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
 }
-main .submitcard .flexbox #submit {
+main .submitcard #submit {
   background: hsl(25deg, 97%, 53%);
   width: 340px;
   height: 44px;
@@ -111,7 +112,7 @@ main .submitcard .flexbox #submit {
   cursor: pointer;
   transition: 0.4s ease;
 }
-main .submitcard .flexbox #submit:hover {
+main .submitcard #submit:hover {
   color: hsl(25deg, 97%, 53%);
   background: hsl(0deg, 0%, 100%);
   border: 1px solid hsl(216deg, 12%, 8%);
@@ -146,8 +147,8 @@ main .thankcard .flexbox2 .selected {
   justify-content: center;
   color: hsl(25deg, 97%, 53%);
 }
-main .thankcard .flexbox2 .selected .score {
-  width: 16px;
+main .thankcard .flexbox2 .selected .result {
+  margin: 5px;
 }
 main .hide {
   display: none;

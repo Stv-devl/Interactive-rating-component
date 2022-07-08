@@ -45,30 +45,30 @@ main {
             background: $Orange;
             border: 1px solid $VeryDarkBlue;
           }
-
-          .btn-clicked {
-            background: $MediumGrey;
-          }
+        }
+        .btnclicked {
+          background: $MediumGrey;
+          color: $White;
         }
       }
-      #submit {
-        background: $Orange;
-        width: 340px;
-        height: 44px;
-        border-radius: 20px;
-        border: 1.5px solid $VeryDarkBlue;
-        text-transform: uppercase;
-        color: $White;
-        font-weight: 700;
-        letter-spacing: 2px;
-        cursor: pointer;
-        transition: 0.4s ease;
+    }
+    #submit {
+      background: $Orange;
+      width: 340px;
+      height: 44px;
+      border-radius: 20px;
+      border: 1.5px solid $VeryDarkBlue;
+      text-transform: uppercase;
+      color: $White;
+      font-weight: 700;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: 0.4s ease;
 
-        &:hover {
-          color: $Orange;
-          background: $White;
-          border: 1px solid $VeryDarkBlue;
-        }
+      &:hover {
+        color: $Orange;
+        background: $White;
+        border: 1px solid $VeryDarkBlue;
       }
     }
   }
@@ -103,8 +103,8 @@ main {
         justify-content: center;
         color: $Orange;
 
-        .score {
-          width: 16px;
+        .result {
+          margin: 5px;
         }
       }
     }
