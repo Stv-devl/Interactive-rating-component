@@ -33,7 +33,6 @@ body {
   min-height: 100vh;
   font-family: overpass;
   font-weight: 400;
-  font-size: 15px;
   background-color: $VeryDarkBlue;
   text-align: left;
   color: $White;
@@ -42,6 +41,18 @@ body {
 a,
 a:visited {
   color: $Orange;
+}
+
+p {
+  margin-right: 10px;
+  color: $LightGrey;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+h1,
+h2 {
+  font-size: 1.65rem;
 }
 
 /*mixin for use flexbox to center elements*/

@@ -4,64 +4,112 @@ main {
   align-items: center;
   min-height: 100vh;
 
-  .flexbox {
-    width: 415px;
-    height: 415px;
-    border-radius: 28px;
-    background: $DarkBlue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 32px;
-
-    span {
-      @include center;
-      background: hsl(212, 11%, 24%);
-      width: 47px;
-      height: 47px;
-      border-radius: 50%;
-    }
-    h1 {
-      font-size: 1.65rem;
-    }
-    p {
-      margin-right: 10px;
-      color: $LightGrey;
-      line-height: 25px;
-    }
-
-    ul {
+  .submitcard {
+    .flexbox {
+      width: 415px;
+      height: 415px;
+      border-radius: 28px;
+      background: $DarkBlue;
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 32px;
 
-      button {
+      span {
+        @include center;
         background: hsl(212, 11%, 24%);
         width: 47px;
         height: 47px;
         border-radius: 50%;
-        border: none;
-        color: $LightGrey;
-        font-size: 0.9rem;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-around;
+
+        li {
+          background: hsl(212, 11%, 24%);
+          width: 47px;
+          height: 47px;
+          border-radius: 50%;
+          border: none;
+          color: $LightGrey;
+          font-size: 0.9rem;
+          font-weight: 700;
+          cursor: pointer;
+          transition: 0.4s ease;
+          @include center;
+
+          &:hover {
+            color: $White;
+            background: $Orange;
+            border: 1px solid $VeryDarkBlue;
+          }
+
+          .btn-clicked {
+            background: $MediumGrey;
+          }
+        }
+      }
+      #submit {
+        background: $Orange;
+        width: 340px;
+        height: 44px;
+        border-radius: 20px;
+        border: 1.5px solid $VeryDarkBlue;
+        text-transform: uppercase;
+        color: $White;
         font-weight: 700;
+        letter-spacing: 2px;
         cursor: pointer;
+        transition: 0.4s ease;
 
         &:hover {
-          color: $White;
-          background: $Orange;
+          color: $Orange;
+          background: $White;
           border: 1px solid $VeryDarkBlue;
         }
       }
     }
-    #submit {
-      background: $Orange;
-      width: 340px;
-      height: 44px;
-      border-radius: 20px;
-      border: 1.5px solid $VeryDarkBlue;
-      text-transform: uppercase;
-      color: $White;
-      font-weight: 700;
-      letter-spacing: 2px;
+  }
+  .thankcard {
+    text-align: center;
+    cursor: pointer;
+
+    .flexbox2 {
+      width: 415px;
+      height: 415px;
+      border-radius: 28px;
+      background: $DarkBlue;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 32px;
+
+      img {
+        width: 160px;
+        height: 110px;
+        margin: 0 auto;
+      }
+
+      .selected {
+        background: hsl(212, 11%, 24%);
+        border-radius: 15px;
+        width: 194px;
+        height: 32px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $Orange;
+
+        .score {
+          width: 16px;
+        }
+      }
     }
+  }
+  .hide {
+    display: none;
   }
 }

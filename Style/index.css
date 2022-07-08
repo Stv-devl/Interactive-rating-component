@@ -22,7 +22,6 @@ body {
   min-height: 100vh;
   font-family: overpass;
   font-weight: 400;
-  font-size: 15px;
   background-color: hsl(216deg, 12%, 8%);
   text-align: left;
   color: hsl(0deg, 0%, 100%);
@@ -34,6 +33,18 @@ a:visited {
   color: hsl(25deg, 97%, 53%);
 }
 
+p {
+  margin-right: 10px;
+  color: hsl(217deg, 12%, 63%);
+  line-height: 25px;
+  font-size: 15px;
+}
+
+h1,
+h2 {
+  font-size: 1.65rem;
+}
+
 /*mixin for use flexbox to center elements*/
 main {
   display: flex;
@@ -41,7 +52,7 @@ main {
   align-items: center;
   min-height: 100vh;
 }
-main .flexbox {
+main .submitcard .flexbox {
   width: 415px;
   height: 415px;
   border-radius: 28px;
@@ -51,7 +62,7 @@ main .flexbox {
   justify-content: space-between;
   padding: 32px;
 }
-main .flexbox span {
+main .submitcard .flexbox span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,19 +71,11 @@ main .flexbox span {
   height: 47px;
   border-radius: 50%;
 }
-main .flexbox h1 {
-  font-size: 1.65rem;
-}
-main .flexbox p {
-  margin-right: 10px;
-  color: hsl(217deg, 12%, 63%);
-  line-height: 25px;
-}
-main .flexbox ul {
+main .submitcard .flexbox ul {
   display: flex;
   justify-content: space-around;
 }
-main .flexbox ul button {
+main .submitcard .flexbox ul li {
   background: hsl(212deg, 11%, 24%);
   width: 47px;
   height: 47px;
@@ -82,13 +85,20 @@ main .flexbox ul button {
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .flexbox ul button:hover {
+main .submitcard .flexbox ul li:hover {
   color: hsl(0deg, 0%, 100%);
   background: hsl(25deg, 97%, 53%);
   border: 1px solid hsl(216deg, 12%, 8%);
 }
-main .flexbox #submit {
+main .submitcard .flexbox ul li .btn-clicked {
+  background: hsl(216deg, 12%, 54%);
+}
+main .submitcard .flexbox #submit {
   background: hsl(25deg, 97%, 53%);
   width: 340px;
   height: 44px;
@@ -98,6 +108,49 @@ main .flexbox #submit {
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
   letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+main .submitcard .flexbox #submit:hover {
+  color: hsl(25deg, 97%, 53%);
+  background: hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(216deg, 12%, 8%);
+}
+main .thankcard {
+  text-align: center;
+  cursor: pointer;
+}
+main .thankcard .flexbox2 {
+  width: 415px;
+  height: 415px;
+  border-radius: 28px;
+  background: hsl(213deg, 19%, 18%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+}
+main .thankcard .flexbox2 img {
+  width: 160px;
+  height: 110px;
+  margin: 0 auto;
+}
+main .thankcard .flexbox2 .selected {
+  background: hsl(212deg, 11%, 24%);
+  border-radius: 15px;
+  width: 194px;
+  height: 32px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(25deg, 97%, 53%);
+}
+main .thankcard .flexbox2 .selected .score {
+  width: 16px;
+}
+main .hide {
+  display: none;
 }
 
 /*****align footer and set size and color*****/
