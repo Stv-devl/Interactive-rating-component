@@ -1,9 +1,38 @@
-//create the btn variable
-const btn = document.querySelector(".circle");
+//variables
+const buttons = document.querySelectorAll(".button");
+let number = 0;
 
-//even on click => popup will appear and leave if we click again. Here popup is an Id so don't need to create a variable
-btn.addEventListener("click", () => {
-  popup.classList.toggle("hide");
+// for each button => add grey color when clicked, number will be the text of button, remove grey color if click in other button
+buttons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    buttons.forEach((btn) => {
+      btn.classList.remove("btnclicked");
+    });
+    if (e.target.classList.contains("button")) {
+      e.target.classList.add("btnclicked");
+    } else {
+      e.target.parentElement.classList.add("btnclicked");
+    }
+
+    number = e.target.textContent;
+
+    //console.log(number);
+  });
 });
 
-//an other way will be to do add "Hide" when we click on the button and remove "Hide" when we click again on the button.
+// Submit fonction
+submit.addEventListener("click", () => {
+  if (number === 0) {
+    alert("Please choose a rate score");
+  } else {
+    submitcard.classList.add("hide");
+    result.textContent = number;
+    thankcard.classList.remove("hide");
+  }
+});
+
+// when we click on thanks card we back to submit card
+thankcard.addEventListener("click", () => {
+  thankcard.classList.add("hide");
+  submitcard.classList.remove("hide");
+});
