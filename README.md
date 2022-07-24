@@ -1,6 +1,4 @@
-# Frontend Mentor - Chat app CSS illustration solution
-
-This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+# Frontend Mentor - Article preview component
 
 ## Table of contents
 
@@ -18,22 +16,35 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 
 ### The challenge
 
-Users should be able to:
+Your challenge is to build out this article preview component and get it looking as close to the design as possible.
 
-- View the optimal layout for the component depending on their device's screen size
-- **Bonus**: See the chat interface animate on the initial load
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+The only JavaScript you'll need for this challenge is to initiate the share options when someone clicks the share icon.
+
+Your users should be able to:
+
+View the optimal layout for the component depending on their device's screen size
+See the social media share links when they click the share icon
 
 ### Screenshot
 
-IN CONSTRUCTION
+Descktop :
 
-![](./screenshot)
+![](./screenshot/Screenshot%20desktop.png)
+
+Mobile :
+
+![](./screenshot/Screenshot%20mobile.png)
 
 ### Links
 
-- Solution URL: [IN CONSTRUCTION]()
+- Solution URL: [here](https://stv-devl.github.io/article-preview-component/)
 
 ## My process
+
+CSS : working with grid and flexbox.
+Javascipt : working with a toggle
 
 ### Built with
 
@@ -43,11 +54,15 @@ IN CONSTRUCTION
 - CSS Grid
 - Mobile-first workflow
 - SASS / SCSS
-- JAVASCRIPT
+- Javascript
 
 ### What I learned
 
+I learned to use simple Javascipt, in this exercice I used the toggle for display or not the popup.
+
 ### Continued development
+
+I will practive more javascript.
 
 ### Useful resources
 
@@ -55,9 +70,3 @@ IN CONSTRUCTION
 
 - Website - [Steven](https://github.com/Stv-devl)
 - Frontend Mentor - [@y/Stv-devl](https://www.frontendmentor.io/profile/Stv-devl)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
