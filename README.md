@@ -1,4 +1,6 @@
-# Frontend Mentor - Article preview component
+# Frontend Mentor - Interactive-rating-component
+
+This is a solution to the [Interactive-rating-component](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -16,35 +18,27 @@
 
 ### The challenge
 
-Your challenge is to build out this article preview component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-The only JavaScript you'll need for this challenge is to initiate the share options when someone clicks the share icon.
-
 Your users should be able to:
 
-View the optimal layout for the component depending on their device's screen size
-See the social media share links when they click the share icon
+- Select and submit a number rating
+- See the "Thank you" card state after submitting a rating
+- View the optimal layout for the app depending on their device's screen size
+- See hover states for all interactive elements on the page
 
 ### Screenshot
 
-Descktop :
-
-![](./screenshot/Screenshot%20desktop.png)
-
-Mobile :
-
-![](./screenshot/Screenshot%20mobile.png)
+![](./screenshot/Screenshot.png)
 
 ### Links
 
-- Solution URL: [here](https://stv-devl.github.io/article-preview-component/)
+- Solution URL: [Click here](https://stv-devl.github.io/Interactive-rating-component/)
 
 ## My process
 
-CSS : working with grid and flexbox.
-Javascipt : working with a toggle
+CSS with SASS, I used grid and flexbox. Vanilla Javascript.
+
+- When we choose a rating and submit it, the" thank you card" will be display with our rating number. - When we select a rating button, it turns gray. If we choose another button, the gray will be removed on the other button.
+- When we click on the thank you card again, we return to the rating card.
 
 ### Built with
 
@@ -54,17 +48,15 @@ Javascipt : working with a toggle
 - CSS Grid
 - Mobile-first workflow
 - SASS / SCSS
-- Javascript
+- JAVASCRIPT
 
 ### What I learned
 
-I learned to use simple Javascipt, in this exercice I used the toggle for display or not the popup.
+Interesting challenge for practice javascript.
 
 ### Continued development
 
-I will practive more javascript.
-
-### Useful resources
+Junior javascript exercices
 
 ## Author
 
