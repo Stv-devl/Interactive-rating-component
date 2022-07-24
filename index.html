@@ -4,39 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./Style/index.css">
-  <title>Frontend Mentor | Interactive rating component</title>
+  <title>Frontend Mentor | Article preview component</title>
 </head>
 
 <body>
-  <main class="page">
-    <div class="submitcard" id="submitcard">
-      <div class="flexbox">
-        <span class="circle"><img class="document" src=".//images/icon-star.svg" alt="icon-star"></span>
-        <h1>How did we do?</h1>
-        <p>Please let us know how we did with support request. All feedback is appreciated to help us improve our
-          offering
-        </p>
-        <ul>
-          <li class="button" id="btn1">1</li>
-          <li class="button" id="btn2">2</li>
-          <li class="button" id="btn3">3</li>
-          <li class="button" id="btn4">4</li>
-          <li class="button" id="btn5">5</li>
-        </ul>
-        <button id="submit">submit</button>
+  <main>
+    <div class="card">
+      <div class="card-left"></div>
+      <div class="card-right">
+        <H1>Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</H1>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+        <div class="bottom-card">
+          <img class="img2" alt="michelle" src="./images/avatar-michelle.jpg">
+          <div class="txt1">
+            <h2> Michelle Appleton</h2>
+            <p>28 Jun 2020</p>
+          </div>
+          <div class="circle"><i class="fa-solid fa-share"></i>
+            <div class="popup hide" id="popup">
+              <div class="flexbox">
+                <h3>share</h3>
+                <img class="img4" alt="fb" src="./images/icon-facebook.svg">
+                <img class="img5" alt="tw" src="./images/icon-twitter.svg">
+                <img class="img6" alt="pint" src="./images/icon-pinterest.svg">
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
-    <div class="thankcard hide" id="thankcard">
-      <div class="flexbox2">
-        <img class="thankyou" src=".//images/illustration-thank-you.svg" alt="thankyou">
-        <span class="selected" id="selected">You selected <span class="result" id="result">1</span> out of 5 </span>
-        <h2>Thank you!</h2>
-        <P>We appreciate you taking the time to give a rating. If you ever need more support, dont hesitate to get in
-          touch</P>
-      </div>
   </main>
   <footer>
     <div class="attribution">

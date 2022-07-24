@@ -1,37 +1,9 @@
-const button = document.querySelectorAll(".button");
-let result_score = 0;
+//create the btn variable
+const btn = document.querySelector(".circle");
 
-submit.addEventListener("click", onSubmit);
-
-button.forEach((btn) => {
-  btn.addEventListener("click", btnClick);
+//even on click => popup will appear and leave if we click again. Here popup is an Id so don't need to create a variable
+btn.addEventListener("click", () => {
+  popup.classList.toggle("hide");
 });
 
-function onSubmit() {
-  if (result_score == 0) {
-    alert("Please choose a rate score");
-  } else {
-    submitcard.classList.add("hide");
-    result.textContent = result_score;
-    thankcard.classList.remove("hide");
-  }
-}
-
-function btnClick(event) {
-  button.forEach((btn) => {
-    btn.classList.remove("btnclicked");
-  });
-
-  if (event.target.classList.contains("button")) {
-    event.target.classList.add("btnclicked");
-  } else {
-    event.target.parentElement.classList.add("btnclicked");
-  }
-
-  result_score = event.target.textContent;
-}
-
-thankcard.addEventListener("click", () => {
-  thankcard.classList.add("hide");
-  submitcard.classList.remove("hide");
-});
+//an other way will be to do add "Hide" when we click on the button and remove "Hide" when we click again on the button.
